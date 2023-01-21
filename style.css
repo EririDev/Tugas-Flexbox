@@ -90,8 +90,8 @@ main {
   gap: 15px;
 }
 .content-left {
-  flex: 1;
   display: flex;
+  width: 20%;
   flex-direction: column;
   align-items: flex-start;
   margin-left: 20px;
@@ -104,11 +104,20 @@ main {
   height: 400px;
   border-radius: 20px;
   overflow: hidden;
-  padding: 15px;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  align-items: center;
+}
+.contain-edit{
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  align-items: flex-start;
 }
 .box-left img{
-    width: 250px;
+    width: 200px;
     border-radius: 15px;
 }
 .box-left a{
@@ -120,6 +129,11 @@ main {
     font-weight: bold;
     border-radius: 15px;
     margin-top: 0;
+    width: 100px;
+}
+.box-left h3{
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 
 .container-menu a {
@@ -127,7 +141,7 @@ main {
     align-items: center;
     color: white;
     text-decoration: none;
-    width: 280px;
+    width: 270px;
   }
 .container-menu:hover{
     background-color: #0e0f39;
@@ -161,6 +175,9 @@ ul li {
   margin-right: 15px;
   color: white;
 }
+.content-center {
+  width: 50%;
+}
 .content-center .menu{
     background-color: #07071f;
     padding: 10px;
@@ -168,9 +185,6 @@ ul li {
 }
 .content-center .lagi{
     padding: 10px;
-}
-.content-center {
-  flex: 3;
 }
 .cover-center {
   height: 350px;
@@ -181,8 +195,8 @@ ul li {
 
 }
 .cover-center img{
-    object-position: 0px -60px;
-  width: 100%;
+    object-position: 0px -7px;
+    width: 100%;
 
 }
 .main-box{
@@ -239,24 +253,64 @@ ul li {
     gap: 20px;
 }
 .content-right {
-  flex: 1;
+  width: 30%;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: flex-start;
   margin-right: 20px;
-  gap: 15px;
+
+}
+.content-right a{
+  text-decoration: none;
+  color: #07071f;
 }
 
+.box-right h2{
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-bottom: 15px;
+  color: white;
+}
 .box-right {
   background-color: #707191;
   width: 100%;
-  height: 600px;
   margin: 0;
-  border-radius: 20px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
+
 .box-trending{
-    display: flex;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #707191;
+  padding: 20px;
+  width: 340px;
+  margin: 0;
+}
+.box-trending:hover{
+  background-color: #41426c;
+}
+.box-trending img{
+  filter: invert();
+}
+span .box-trending{
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+
 }
 .trending p{
     margin: 0;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
 }
+
+.trending p span{
+  color: black;
+  font-size: 15px;
+  font-weight: 100;
+}
+
+
+
